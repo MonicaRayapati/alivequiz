@@ -1,0 +1,3372 @@
+{
+  "contractName": "quiz",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "endTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "inputData",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "statusNow",
+      "outputs": [
+        {
+          "internalType": "enum quiz.Status",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "statusKey",
+          "type": "string"
+        }
+      ],
+      "name": "getInput",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "storageState",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "setTimer",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "isEnd",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getStatus",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"endTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"statusKey\",\"type\":\"string\"}],\"name\":\"getInput\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getStatus\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"inputData\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"isEnd\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setTimer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"statusNow\",\"outputs\":[{\"internalType\":\"enum quiz.Status\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"storageState\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol\":\"quiz\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol\":{\"keccak256\":\"0xa542a6be3820f466afd9070aaa1f5721dde599b8ba3cdfc667e4c412ecc1763e\",\"urls\":[\"bzz-raw://72e500da0561eddec9d001ecec157d7dd2feb773898148e8f4d5b7b590a42ec2\",\"dweb:/ipfs/QmbZTp5FJYLpy8dTvW8rZGApiGuW61Qs9o493rj8eqC7hS\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5033600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600360006101000a81548160ff0219169083600281111561007157fe5b0217905550610996806100856000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80634e69d560116100665780634e69d560146101a75780638da5cb5b1461022a57806399c33a5314610274578063aa302f221461027e578063b0185da41461030157610093565b806312f2c72b146100985780632fc6e8b7146100c45780633197cbb6146100ce57806331cc48fd146100ec575b600080fd5b6100a061030b565b604051808260028111156100b057fe5b60ff16815260200191505060405180910390f35b6100cc61031e565b005b6100d6610411565b6040518082815260200191505060405180910390f35b6101a56004803603602081101561010257600080fd5b810190808035906020019064010000000081111561011f57600080fd5b82018360208201111561013157600080fd5b8035906020019184600183028401116401000000008311171561015357600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610417565b005b6101af6104f4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101ef5780820151818401526020810190506101d4565b50505050905090810190601f16801561021c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61023261063a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61027c610660565b005b610286610812565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102c65780820151818401526020810190506102ab565b50505050905090810190601f1680156102f35780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6103096108b0565b005b600360009054906101000a900460ff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103e1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b600254421061040f576002600360006101000a81548160ff0219169083600281111561040957fe5b02179055505b565b60025481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b80600090805190602001906104f09291906108bc565b5050565b6060600360009054906101000a900460ff16600281111561051157fe5b6000600281111561051e57fe5b1415610561576040518060400160405280600781526020017f556e6b6e6f776e000000000000000000000000000000000000000000000000008152509050610637565b600360009054906101000a900460ff16600281111561057c57fe5b60028081111561058857fe5b14156105cb576040518060400160405280600781526020017f4d697373696e67000000000000000000000000000000000000000000000000008152509050610637565b600360009054906101000a900460ff1660028111156105e657fe5b600160028111156105f357fe5b1415610636576040518060400160405280600581526020017f416c6976650000000000000000000000000000000000000000000000000000008152509050610637565b5b90565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610723576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b60405160200180807f4920616d20616c69766500000000000000000000000000000000000000000000815250600a01905060405160208183030381529060405280519060200120600060405160200180828054600181600116156101000203166002900480156107ca5780601f106107a85761010080835404028352918201916107ca565b820191906000526020600020905b8154815290600101906020018083116107b6575b5050915050604051602081830303815290604052805190602001201415610810576001600360006101000a81548160ff0219169083600281111561080a57fe5b02179055505b565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108a85780601f1061087d576101008083540402835291602001916108a8565b820191906000526020600020905b81548152906001019060200180831161088b57829003601f168201915b505050505081565b603c4201600281905550565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106108fd57805160ff191683800117855561092b565b8280016001018555821561092b579182015b8281111561092a57825182559160200191906001019061090f565b5b509050610938919061093c565b5090565b61095e91905b8082111561095a576000816000905550600101610942565b5090565b9056fea265627a7a72315820db82dc7f1814bdc7a42a240e13c2845dcb7b22f77367ab068aa26c66cb756d2664736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c80634e69d560116100665780634e69d560146101a75780638da5cb5b1461022a57806399c33a5314610274578063aa302f221461027e578063b0185da41461030157610093565b806312f2c72b146100985780632fc6e8b7146100c45780633197cbb6146100ce57806331cc48fd146100ec575b600080fd5b6100a061030b565b604051808260028111156100b057fe5b60ff16815260200191505060405180910390f35b6100cc61031e565b005b6100d6610411565b6040518082815260200191505060405180910390f35b6101a56004803603602081101561010257600080fd5b810190808035906020019064010000000081111561011f57600080fd5b82018360208201111561013157600080fd5b8035906020019184600183028401116401000000008311171561015357600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610417565b005b6101af6104f4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101ef5780820151818401526020810190506101d4565b50505050905090810190601f16801561021c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61023261063a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61027c610660565b005b610286610812565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102c65780820151818401526020810190506102ab565b50505050905090810190601f1680156102f35780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6103096108b0565b005b600360009054906101000a900460ff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103e1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b600254421061040f576002600360006101000a81548160ff0219169083600281111561040957fe5b02179055505b565b60025481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b80600090805190602001906104f09291906108bc565b5050565b6060600360009054906101000a900460ff16600281111561051157fe5b6000600281111561051e57fe5b1415610561576040518060400160405280600781526020017f556e6b6e6f776e000000000000000000000000000000000000000000000000008152509050610637565b600360009054906101000a900460ff16600281111561057c57fe5b60028081111561058857fe5b14156105cb576040518060400160405280600781526020017f4d697373696e67000000000000000000000000000000000000000000000000008152509050610637565b600360009054906101000a900460ff1660028111156105e657fe5b600160028111156105f357fe5b1415610636576040518060400160405280600581526020017f416c6976650000000000000000000000000000000000000000000000000000008152509050610637565b5b90565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610723576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b60405160200180807f4920616d20616c69766500000000000000000000000000000000000000000000815250600a01905060405160208183030381529060405280519060200120600060405160200180828054600181600116156101000203166002900480156107ca5780601f106107a85761010080835404028352918201916107ca565b820191906000526020600020905b8154815290600101906020018083116107b6575b5050915050604051602081830303815290604052805190602001201415610810576001600360006101000a81548160ff0219169083600281111561080a57fe5b02179055505b565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108a85780601f1061087d576101008083540402835291602001916108a8565b820191906000526020600020905b81548152906001019060200180831161088b57829003601f168201915b505050505081565b603c4201600281905550565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106108fd57805160ff191683800117855561092b565b8280016001018555821561092b579182015b8281111561092a57825182559160200191906001019061090f565b5b509050610938919061093c565b5090565b61095e91905b8082111561095a576000816000905550600101610942565b5090565b9056fea265627a7a72315820db82dc7f1814bdc7a42a240e13c2845dcb7b22f77367ab068aa26c66cb756d2664736f6c634300050c0032",
+  "sourceMap": "28:1194:1:-;;;225:116;8:9:-1;5:2;;;30:1;27;20:12;5:2;225:116:1;278:10;270:5;;:18;;;;;;;;;;;;;;;;;;315:14;303:9;;:26;;;;;;;;;;;;;;;;;;;;;;;;28:1194;;;;;;",
+  "deployedSourceMap": "28:1194:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:1194:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;195:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;849:122;;;:::i;:::-;;108:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;458:100;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;458:100:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;458:100:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;458:100:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;458:100:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;458:100:1;;;;;;;;;;;;;;;:::i;:::-;;977:242;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;977:242:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;81:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;568:197;;;:::i;:::-;;51:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;51:23:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;771:72;;;:::i;:::-;;195:23;;;;;;;;;;;;;:::o;849:122::-;398:5;;;;;;;;;;;384:19;;:10;:19;;;376:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;903:7;;896:3;:14;893:71;;938:14;926:9;;:26;;;;;;;;;;;;;;;;;;;;;;;;893:71;849:122::o;108:19::-;;;;:::o;458:100::-;398:5;;;;;;;;;;;384:19;;:10;:19;;;376:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;541:9;529;:21;;;;;;;;;;;;:::i;:::-;;458:100;:::o;977:242::-;1018:13;1064:9;;;;;;;;;;;1046:27;;;;;;;;:14;:27;;;;;;;;;1043:51;;;1076:16;;;;;;;;;;;;;;;;;;;;;1043:51;1125:9;;;;;;;;;;;1107:27;;;;;;;;:14;:27;;;;;;;;;1104:51;;;1137:16;;;;;;;;;;;;;;;;;;;;;1104:51;1184:9;;;;;;;;;;;1168:25;;;;;;;;:12;:25;;;;;;;;;1165:47;;;1196:14;;;;;;;;;;;;;;;;;;;;;1165:47;977:242;;:::o;81:20::-;;;;;;;;;;;;;:::o;568:197::-;398:5;;;;;;;;;;;384:19;;:10;:19;;;376:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;674:30;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;674:30:1;;;664:41;;;;;;649:9;632:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;632:27:1;;;622:38;;;;;;:83;619:139;;;734:12;722:9;;:24;;;;;;;;;;;;;;;;;;;;;;;;619:139;568:197::o;51:23::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;771:72::-;825:10;819:3;:16;809:7;:26;;;;771:72::o;28:1194::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.11;\r\n\r\ncontract quiz {\r\n\r\n    string public inputData;\r\n    address public owner;\r\n    uint public endTime;\r\n\r\n    enum Status {\r\n        unknown, alive, missing\r\n    }\r\n    Status public statusNow;\r\n    constructor() public\r\n        {\r\n            owner = msg.sender;\r\n            statusNow = Status.unknown;\r\n        }\r\n    modifier isOwner(){\r\n        require(msg.sender == owner, \"Invalid Authentication\");\r\n        _;\r\n    }\r\n\r\n    function getInput(string memory statusKey) public isOwner() {\r\n        inputData = statusKey;\r\n    }\r\n        function storageState() public isOwner(){\r\n        if(keccak256(abi.encodePacked(inputData)) == keccak256(abi.encodePacked(\"I am alive\")) ){\r\n            statusNow = Status.alive;\r\n        }\r\n    }\r\n    function setTimer() public {\r\n        endTime = now + 60 seconds;\r\n    }\r\n    function isEnd() public isOwner(){\r\n        if(now >= endTime){\r\n            statusNow = Status.missing;\r\n        }\r\n    }\r\n    function getStatus() public view returns(string memory){\r\n        if(Status.unknown == statusNow){ return \"Unknown\";}\r\n        if(Status.missing == statusNow){ return \"Missing\";}\r\n        if(Status.alive == statusNow){ return \"Alive\";}\r\n    }\r\n}",
+  "sourcePath": "C:/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol",
+    "exportedSymbols": {
+      "quiz": [
+        191
+      ]
+    },
+    "id": 192,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 191,
+        "linearizedBaseContracts": [
+          191
+        ],
+        "name": "quiz",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "inputData",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "51:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "51:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 62,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "81:20:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 61,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "81:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "endTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "108:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 63,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "108:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "quiz.Status",
+            "id": 68,
+            "members": [
+              {
+                "id": 65,
+                "name": "unknown",
+                "nodeType": "EnumValue",
+                "src": "159:7:1"
+              },
+              {
+                "id": 66,
+                "name": "alive",
+                "nodeType": "EnumValue",
+                "src": "168:5:1"
+              },
+              {
+                "id": 67,
+                "name": "missing",
+                "nodeType": "EnumValue",
+                "src": "175:7:1"
+              }
+            ],
+            "name": "Status",
+            "nodeType": "EnumDefinition",
+            "src": "136:53:1"
+          },
+          {
+            "constant": false,
+            "id": 70,
+            "name": "statusNow",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "195:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Status_$68",
+              "typeString": "enum quiz.Status"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 69,
+              "name": "Status",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 68,
+              "src": "195:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$68",
+                "typeString": "enum quiz.Status"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 83,
+              "nodeType": "Block",
+              "src": "255:86:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 76,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 73,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "270:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 74,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 206,
+                        "src": "278:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 75,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "278:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "270:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 77,
+                  "nodeType": "ExpressionStatement",
+                  "src": "270:18:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 81,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 78,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "303:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 79,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "315:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 80,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "unknown",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "315:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "303:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    }
+                  },
+                  "id": 82,
+                  "nodeType": "ExpressionStatement",
+                  "src": "303:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 84,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 71,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "236:2:1"
+            },
+            "returnParameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "255:0:1"
+            },
+            "scope": 191,
+            "src": "225:116:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 95,
+              "nodeType": "Block",
+              "src": "365:85:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 90,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 87,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 206,
+                            "src": "384:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 88,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "384:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 89,
+                          "name": "owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 62,
+                          "src": "398:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "384:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "496e76616c69642041757468656e7469636174696f6e",
+                        "id": 91,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "405:24:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        },
+                        "value": "Invalid Authentication"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        }
+                      ],
+                      "id": 86,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        209,
+                        210
+                      ],
+                      "referencedDeclaration": 210,
+                      "src": "376:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 92,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "376:54:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 93,
+                  "nodeType": "ExpressionStatement",
+                  "src": "376:54:1"
+                },
+                {
+                  "id": 94,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "441:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 96,
+            "name": "isOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 85,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "363:2:1"
+            },
+            "src": "347:103:1",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 107,
+              "nodeType": "Block",
+              "src": "518:40:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 105,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 103,
+                      "name": "inputData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "529:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 104,
+                      "name": "statusKey",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 98,
+                      "src": "541:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "529:21:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 106,
+                  "nodeType": "ExpressionStatement",
+                  "src": "529:21:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 108,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 101,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 100,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 96,
+                  "src": "508:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "508:9:1"
+              }
+            ],
+            "name": "getInput",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 99,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 98,
+                  "name": "statusKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 108,
+                  "src": "476:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "476:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "475:25:1"
+            },
+            "returnParameters": {
+              "id": 102,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "518:0:1"
+            },
+            "scope": 191,
+            "src": "458:100:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 133,
+              "nodeType": "Block",
+              "src": "608:157:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    },
+                    "id": 125,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 116,
+                              "name": "inputData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 60,
+                              "src": "649:9:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 114,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 193,
+                              "src": "632:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 115,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "632:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 117,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "632:27:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 113,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 200,
+                        "src": "622:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 118,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "622:38:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "4920616d20616c697665",
+                              "id": 122,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "691:12:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              },
+                              "value": "I am alive"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 120,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 193,
+                              "src": "674:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 121,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "674:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 123,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "674:30:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 119,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 200,
+                        "src": "664:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 124,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "664:41:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "622:83:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 132,
+                  "nodeType": "IfStatement",
+                  "src": "619:139:1",
+                  "trueBody": {
+                    "id": 131,
+                    "nodeType": "Block",
+                    "src": "707:51:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 129,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 126,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 70,
+                            "src": "722:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 127,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 68,
+                              "src": "734:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                                "typeString": "type(enum quiz.Status)"
+                              }
+                            },
+                            "id": 128,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "alive",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "734:12:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "src": "722:24:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$68",
+                            "typeString": "enum quiz.Status"
+                          }
+                        },
+                        "id": 130,
+                        "nodeType": "ExpressionStatement",
+                        "src": "722:24:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 134,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 111,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 110,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 96,
+                  "src": "599:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "599:9:1"
+              }
+            ],
+            "name": "storageState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 109,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "589:2:1"
+            },
+            "returnParameters": {
+              "id": 112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "608:0:1"
+            },
+            "scope": 191,
+            "src": "568:197:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 143,
+              "nodeType": "Block",
+              "src": "798:45:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 141,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 137,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64,
+                      "src": "809:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 140,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 138,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 208,
+                        "src": "819:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "3630",
+                        "id": 139,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "825:10:1",
+                        "subdenomination": "seconds",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_60_by_1",
+                          "typeString": "int_const 60"
+                        },
+                        "value": "60"
+                      },
+                      "src": "819:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "809:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 142,
+                  "nodeType": "ExpressionStatement",
+                  "src": "809:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 144,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTimer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 135,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "788:2:1"
+            },
+            "returnParameters": {
+              "id": 136,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "798:0:1"
+            },
+            "scope": 191,
+            "src": "771:72:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 159,
+              "nodeType": "Block",
+              "src": "882:89:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 151,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 149,
+                      "name": "now",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 208,
+                      "src": "896:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 150,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64,
+                      "src": "903:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "896:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 158,
+                  "nodeType": "IfStatement",
+                  "src": "893:71:1",
+                  "trueBody": {
+                    "id": 157,
+                    "nodeType": "Block",
+                    "src": "911:53:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 155,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 152,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 70,
+                            "src": "926:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 153,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 68,
+                              "src": "938:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                                "typeString": "type(enum quiz.Status)"
+                              }
+                            },
+                            "id": 154,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "missing",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "938:14:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "src": "926:26:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$68",
+                            "typeString": "enum quiz.Status"
+                          }
+                        },
+                        "id": 156,
+                        "nodeType": "ExpressionStatement",
+                        "src": "926:26:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 160,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 147,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 146,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 96,
+                  "src": "873:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "873:9:1"
+              }
+            ],
+            "name": "isEnd",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 145,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "863:2:1"
+            },
+            "returnParameters": {
+              "id": 148,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "882:0:1"
+            },
+            "scope": 191,
+            "src": "849:122:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 189,
+              "nodeType": "Block",
+              "src": "1032:187:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    },
+                    "id": 168,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 165,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "1046:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 166,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "unknown",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1046:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 167,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "1064:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "1046:27:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 172,
+                  "nodeType": "IfStatement",
+                  "src": "1043:51:1",
+                  "trueBody": {
+                    "id": 171,
+                    "nodeType": "Block",
+                    "src": "1074:20:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "hexValue": "556e6b6e6f776e",
+                          "id": 169,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1083:9:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_6ff165d3fe0272c13129fc9e1aecd998364a5fdcad04c6ae84a7d1dfc3d06a17",
+                            "typeString": "literal_string \"Unknown\""
+                          },
+                          "value": "Unknown"
+                        },
+                        "functionReturnParameters": 164,
+                        "id": 170,
+                        "nodeType": "Return",
+                        "src": "1076:16:1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    },
+                    "id": 176,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 173,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "1107:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 174,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "missing",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1107:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 175,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "1125:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "1107:27:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 180,
+                  "nodeType": "IfStatement",
+                  "src": "1104:51:1",
+                  "trueBody": {
+                    "id": 179,
+                    "nodeType": "Block",
+                    "src": "1135:20:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "hexValue": "4d697373696e67",
+                          "id": 177,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1144:9:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_17e00c7f3cb4f6cf0be954a5e73fc7b6acf3a5d661563c6ec2d4a7f8246cd8c3",
+                            "typeString": "literal_string \"Missing\""
+                          },
+                          "value": "Missing"
+                        },
+                        "functionReturnParameters": 164,
+                        "id": 178,
+                        "nodeType": "Return",
+                        "src": "1137:16:1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    },
+                    "id": 184,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 181,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "1168:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 182,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "alive",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1168:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 183,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "1184:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "1168:25:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 188,
+                  "nodeType": "IfStatement",
+                  "src": "1165:47:1",
+                  "trueBody": {
+                    "id": 187,
+                    "nodeType": "Block",
+                    "src": "1194:18:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "hexValue": "416c697665",
+                          "id": 185,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1203:7:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_0b240883b7e97aa4f6cc51876c342e2992f161e590416a44ebaf317d5143a1f6",
+                            "typeString": "literal_string \"Alive\""
+                          },
+                          "value": "Alive"
+                        },
+                        "functionReturnParameters": 164,
+                        "id": 186,
+                        "nodeType": "Return",
+                        "src": "1196:14:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 190,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 161,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "995:2:1"
+            },
+            "returnParameters": {
+              "id": 164,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 163,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 190,
+                  "src": "1018:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 162,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1018:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1017:15:1"
+            },
+            "scope": 191,
+            "src": "977:242:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 192,
+        "src": "28:1194:1"
+      }
+    ],
+    "src": "0:1222:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol",
+    "exportedSymbols": {
+      "quiz": [
+        191
+      ]
+    },
+    "id": 192,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 191,
+        "linearizedBaseContracts": [
+          191
+        ],
+        "name": "quiz",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "inputData",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "51:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "51:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 62,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "81:20:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 61,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "81:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "endTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "108:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 63,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "108:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "quiz.Status",
+            "id": 68,
+            "members": [
+              {
+                "id": 65,
+                "name": "unknown",
+                "nodeType": "EnumValue",
+                "src": "159:7:1"
+              },
+              {
+                "id": 66,
+                "name": "alive",
+                "nodeType": "EnumValue",
+                "src": "168:5:1"
+              },
+              {
+                "id": 67,
+                "name": "missing",
+                "nodeType": "EnumValue",
+                "src": "175:7:1"
+              }
+            ],
+            "name": "Status",
+            "nodeType": "EnumDefinition",
+            "src": "136:53:1"
+          },
+          {
+            "constant": false,
+            "id": 70,
+            "name": "statusNow",
+            "nodeType": "VariableDeclaration",
+            "scope": 191,
+            "src": "195:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Status_$68",
+              "typeString": "enum quiz.Status"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 69,
+              "name": "Status",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 68,
+              "src": "195:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$68",
+                "typeString": "enum quiz.Status"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 83,
+              "nodeType": "Block",
+              "src": "255:86:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 76,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 73,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "270:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 74,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 206,
+                        "src": "278:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 75,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "278:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "270:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 77,
+                  "nodeType": "ExpressionStatement",
+                  "src": "270:18:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 81,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 78,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "303:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 79,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "315:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 80,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "unknown",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "315:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "303:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    }
+                  },
+                  "id": 82,
+                  "nodeType": "ExpressionStatement",
+                  "src": "303:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 84,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 71,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "236:2:1"
+            },
+            "returnParameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "255:0:1"
+            },
+            "scope": 191,
+            "src": "225:116:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 95,
+              "nodeType": "Block",
+              "src": "365:85:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 90,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 87,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 206,
+                            "src": "384:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 88,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "384:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 89,
+                          "name": "owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 62,
+                          "src": "398:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "384:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "496e76616c69642041757468656e7469636174696f6e",
+                        "id": 91,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "405:24:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        },
+                        "value": "Invalid Authentication"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        }
+                      ],
+                      "id": 86,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        209,
+                        210
+                      ],
+                      "referencedDeclaration": 210,
+                      "src": "376:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 92,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "376:54:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 93,
+                  "nodeType": "ExpressionStatement",
+                  "src": "376:54:1"
+                },
+                {
+                  "id": 94,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "441:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 96,
+            "name": "isOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 85,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "363:2:1"
+            },
+            "src": "347:103:1",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 107,
+              "nodeType": "Block",
+              "src": "518:40:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 105,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 103,
+                      "name": "inputData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "529:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 104,
+                      "name": "statusKey",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 98,
+                      "src": "541:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "529:21:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 106,
+                  "nodeType": "ExpressionStatement",
+                  "src": "529:21:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 108,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 101,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 100,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 96,
+                  "src": "508:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "508:9:1"
+              }
+            ],
+            "name": "getInput",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 99,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 98,
+                  "name": "statusKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 108,
+                  "src": "476:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "476:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "475:25:1"
+            },
+            "returnParameters": {
+              "id": 102,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "518:0:1"
+            },
+            "scope": 191,
+            "src": "458:100:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 133,
+              "nodeType": "Block",
+              "src": "608:157:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    },
+                    "id": 125,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 116,
+                              "name": "inputData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 60,
+                              "src": "649:9:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 114,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 193,
+                              "src": "632:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 115,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "632:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 117,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "632:27:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 113,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 200,
+                        "src": "622:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 118,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "622:38:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "4920616d20616c697665",
+                              "id": 122,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "691:12:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              },
+                              "value": "I am alive"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 120,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 193,
+                              "src": "674:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 121,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "674:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 123,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "674:30:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 119,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 200,
+                        "src": "664:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 124,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "664:41:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "622:83:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 132,
+                  "nodeType": "IfStatement",
+                  "src": "619:139:1",
+                  "trueBody": {
+                    "id": 131,
+                    "nodeType": "Block",
+                    "src": "707:51:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 129,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 126,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 70,
+                            "src": "722:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 127,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 68,
+                              "src": "734:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                                "typeString": "type(enum quiz.Status)"
+                              }
+                            },
+                            "id": 128,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "alive",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "734:12:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "src": "722:24:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$68",
+                            "typeString": "enum quiz.Status"
+                          }
+                        },
+                        "id": 130,
+                        "nodeType": "ExpressionStatement",
+                        "src": "722:24:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 134,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 111,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 110,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 96,
+                  "src": "599:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "599:9:1"
+              }
+            ],
+            "name": "storageState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 109,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "589:2:1"
+            },
+            "returnParameters": {
+              "id": 112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "608:0:1"
+            },
+            "scope": 191,
+            "src": "568:197:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 143,
+              "nodeType": "Block",
+              "src": "798:45:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 141,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 137,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64,
+                      "src": "809:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 140,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 138,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 208,
+                        "src": "819:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "3630",
+                        "id": 139,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "825:10:1",
+                        "subdenomination": "seconds",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_60_by_1",
+                          "typeString": "int_const 60"
+                        },
+                        "value": "60"
+                      },
+                      "src": "819:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "809:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 142,
+                  "nodeType": "ExpressionStatement",
+                  "src": "809:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 144,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTimer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 135,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "788:2:1"
+            },
+            "returnParameters": {
+              "id": 136,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "798:0:1"
+            },
+            "scope": 191,
+            "src": "771:72:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 159,
+              "nodeType": "Block",
+              "src": "882:89:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 151,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 149,
+                      "name": "now",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 208,
+                      "src": "896:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 150,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64,
+                      "src": "903:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "896:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 158,
+                  "nodeType": "IfStatement",
+                  "src": "893:71:1",
+                  "trueBody": {
+                    "id": 157,
+                    "nodeType": "Block",
+                    "src": "911:53:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 155,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 152,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 70,
+                            "src": "926:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 153,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 68,
+                              "src": "938:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                                "typeString": "type(enum quiz.Status)"
+                              }
+                            },
+                            "id": 154,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "missing",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "938:14:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$68",
+                              "typeString": "enum quiz.Status"
+                            }
+                          },
+                          "src": "926:26:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$68",
+                            "typeString": "enum quiz.Status"
+                          }
+                        },
+                        "id": 156,
+                        "nodeType": "ExpressionStatement",
+                        "src": "926:26:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 160,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 147,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 146,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 96,
+                  "src": "873:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "873:9:1"
+              }
+            ],
+            "name": "isEnd",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 145,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "863:2:1"
+            },
+            "returnParameters": {
+              "id": 148,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "882:0:1"
+            },
+            "scope": 191,
+            "src": "849:122:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 189,
+              "nodeType": "Block",
+              "src": "1032:187:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    },
+                    "id": 168,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 165,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "1046:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 166,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "unknown",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1046:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 167,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "1064:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "1046:27:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 172,
+                  "nodeType": "IfStatement",
+                  "src": "1043:51:1",
+                  "trueBody": {
+                    "id": 171,
+                    "nodeType": "Block",
+                    "src": "1074:20:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "hexValue": "556e6b6e6f776e",
+                          "id": 169,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1083:9:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_6ff165d3fe0272c13129fc9e1aecd998364a5fdcad04c6ae84a7d1dfc3d06a17",
+                            "typeString": "literal_string \"Unknown\""
+                          },
+                          "value": "Unknown"
+                        },
+                        "functionReturnParameters": 164,
+                        "id": 170,
+                        "nodeType": "Return",
+                        "src": "1076:16:1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    },
+                    "id": 176,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 173,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "1107:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 174,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "missing",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1107:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 175,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "1125:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "1107:27:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 180,
+                  "nodeType": "IfStatement",
+                  "src": "1104:51:1",
+                  "trueBody": {
+                    "id": 179,
+                    "nodeType": "Block",
+                    "src": "1135:20:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "hexValue": "4d697373696e67",
+                          "id": 177,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1144:9:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_17e00c7f3cb4f6cf0be954a5e73fc7b6acf3a5d661563c6ec2d4a7f8246cd8c3",
+                            "typeString": "literal_string \"Missing\""
+                          },
+                          "value": "Missing"
+                        },
+                        "functionReturnParameters": 164,
+                        "id": 178,
+                        "nodeType": "Return",
+                        "src": "1137:16:1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Status_$68",
+                      "typeString": "enum quiz.Status"
+                    },
+                    "id": 184,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 181,
+                        "name": "Status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "1168:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Status_$68_$",
+                          "typeString": "type(enum quiz.Status)"
+                        }
+                      },
+                      "id": 182,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "alive",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1168:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 183,
+                      "name": "statusNow",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 70,
+                      "src": "1184:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$68",
+                        "typeString": "enum quiz.Status"
+                      }
+                    },
+                    "src": "1168:25:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 188,
+                  "nodeType": "IfStatement",
+                  "src": "1165:47:1",
+                  "trueBody": {
+                    "id": 187,
+                    "nodeType": "Block",
+                    "src": "1194:18:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "hexValue": "416c697665",
+                          "id": 185,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1203:7:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_0b240883b7e97aa4f6cc51876c342e2992f161e590416a44ebaf317d5143a1f6",
+                            "typeString": "literal_string \"Alive\""
+                          },
+                          "value": "Alive"
+                        },
+                        "functionReturnParameters": 164,
+                        "id": 186,
+                        "nodeType": "Return",
+                        "src": "1196:14:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 190,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 161,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "995:2:1"
+            },
+            "returnParameters": {
+              "id": 164,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 163,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 190,
+                  "src": "1018:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 162,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1018:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1017:15:1"
+            },
+            "scope": 191,
+            "src": "977:242:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 192,
+        "src": "28:1194:1"
+      }
+    ],
+    "src": "0:1222:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x52537a423cb406729b110140A0f52C6E1E8aDF8c",
+      "transactionHash": "0xd35c5dd78685358ec0d34084f7e0dc8e0a2453e6fcf480ce7bed670b153f8dd8"
+    }
+  },
+  "schemaVersion": "3.0.20",
+  "updatedAt": "2019-12-28T01:52:55.537Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

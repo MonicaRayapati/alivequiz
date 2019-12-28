@@ -1,0 +1,2885 @@
+{
+  "contractName": "AliveTest",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "endTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "inputData",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "state",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "statusKey",
+          "type": "string"
+        }
+      ],
+      "name": "getInput",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "storageState",
+      "outputs": [
+        {
+          "internalType": "enum AliveTest.Status",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "setTimer",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "isEnd",
+      "outputs": [
+        {
+          "internalType": "enum AliveTest.Status",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"endTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"statusKey\",\"type\":\"string\"}],\"name\":\"getInput\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"inputData\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"isEnd\",\"outputs\":[{\"internalType\":\"enum AliveTest.Status\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setTimer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"state\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"storageState\",\"outputs\":[{\"internalType\":\"enum AliveTest.Status\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol\":\"AliveTest\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol\":{\"keccak256\":\"0xf4c532189bdf35d09b24bfd1d4ae15345c43bf08dfb450a10b27a588dc7a48b4\",\"urls\":[\"bzz-raw://9eef48b5c21962542513ba6aa65762f6adcddb39da131ff86ed341ca0fc541a1\",\"dweb:/ipfs/QmWpJihMdCkHXU2kivQdpP2w9PcVi2Pk2oJxqv7ft9aBMA\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5033600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610918806100616000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c806399c33a531161005b57806399c33a53146101dc578063aa302f2214610208578063b0185da41461028b578063c19d93fb1461029557610088565b80632fc6e8b71461008d5780633197cbb6146100b957806331cc48fd146100d75780638da5cb5b14610192575b600080fd5b610095610318565b604051808260028111156100a557fe5b60ff16815260200191505060405180910390f35b6100c1610426565b6040518082815260200191505060405180910390f35b610190600480360360208110156100ed57600080fd5b810190808035906020019064010000000081111561010a57600080fd5b82018360208201111561011c57600080fd5b8035906020019184600183028401116401000000008311171561013e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061042c565b005b61019a610509565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101e461052f565b604051808260028111156101f457fe5b60ff16815260200191505060405180910390f35b6102106106f6565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610250578082015181840152602081019050610235565b50505050905090810190601f16801561027d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610293610794565b005b61029d6107a0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102dd5780820151818401526020810190506102c2565b50505050905090810190601f16801561030a5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103dd576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b426003541415610422576002600460006101000a81548160ff0219169083600281111561040657fe5b0217905550600460009054906101000a900460ff169050610423565b5b90565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104ef576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b806000908051906020019061050592919061083e565b5050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146105f4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b60405160200180807f4920616d20616c69766500000000000000000000000000000000000000000000815250600a019050604051602081830303815290604052805190602001206000604051602001808280546001816001161561010002031660029004801561069b5780601f1061067957610100808354040283529182019161069b565b820191906000526020600020905b815481529060010190602001808311610687575b50509150506040516020818303038152906040528051906020012014156106e1576001600460006101000a81548160ff021916908360028111156106db57fe5b02179055505b600460009054906101000a900460ff16905090565b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561078c5780601f106107615761010080835404028352916020019161078c565b820191906000526020600020905b81548152906001019060200180831161076f57829003601f168201915b505050505081565b603c4201600381905550565b60028054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108365780601f1061080b57610100808354040283529160200191610836565b820191906000526020600020905b81548152906001019060200180831161081957829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061087f57805160ff19168380011785556108ad565b828001600101855582156108ad579182015b828111156108ac578251825591602001919060010190610891565b5b5090506108ba91906108be565b5090565b6108e091905b808211156108dc5760008160009055506001016108c4565b5090565b9056fea265627a7a7231582004f4037fdadfb3b65279da427bd9df2294cc4c858b28e431fc1324c3db39ef0c64736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c806399c33a531161005b57806399c33a53146101dc578063aa302f2214610208578063b0185da41461028b578063c19d93fb1461029557610088565b80632fc6e8b71461008d5780633197cbb6146100b957806331cc48fd146100d75780638da5cb5b14610192575b600080fd5b610095610318565b604051808260028111156100a557fe5b60ff16815260200191505060405180910390f35b6100c1610426565b6040518082815260200191505060405180910390f35b610190600480360360208110156100ed57600080fd5b810190808035906020019064010000000081111561010a57600080fd5b82018360208201111561011c57600080fd5b8035906020019184600183028401116401000000008311171561013e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061042c565b005b61019a610509565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101e461052f565b604051808260028111156101f457fe5b60ff16815260200191505060405180910390f35b6102106106f6565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610250578082015181840152602081019050610235565b50505050905090810190601f16801561027d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610293610794565b005b61029d6107a0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102dd5780820151818401526020810190506102c2565b50505050905090810190601f16801561030a5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103dd576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b426003541415610422576002600460006101000a81548160ff0219169083600281111561040657fe5b0217905550600460009054906101000a900460ff169050610423565b5b90565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104ef576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b806000908051906020019061050592919061083e565b5050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146105f4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f496e76616c69642041757468656e7469636174696f6e0000000000000000000081525060200191505060405180910390fd5b60405160200180807f4920616d20616c69766500000000000000000000000000000000000000000000815250600a019050604051602081830303815290604052805190602001206000604051602001808280546001816001161561010002031660029004801561069b5780601f1061067957610100808354040283529182019161069b565b820191906000526020600020905b815481529060010190602001808311610687575b50509150506040516020818303038152906040528051906020012014156106e1576001600460006101000a81548160ff021916908360028111156106db57fe5b02179055505b600460009054906101000a900460ff16905090565b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561078c5780601f106107615761010080835404028352916020019161078c565b820191906000526020600020905b81548152906001019060200180831161076f57829003601f168201915b505050505081565b603c4201600381905550565b60028054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108365780601f1061080b57610100808354040283529160200191610836565b820191906000526020600020905b81548152906001019060200180831161081957829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061087f57805160ff19168380011785556108ad565b828001600101855582156108ad579182015b828111156108ac578251825591602001919060010190610891565b5b5090506108ba91906108be565b5090565b6108e091905b808211156108dc5760008160009055506001016108c4565b5090565b9056fea265627a7a7231582004f4037fdadfb3b65279da427bd9df2294cc4c858b28e431fc1324c3db39ef0c64736f6c634300050c0032",
+  "sourceMap": "28:1080:1:-;;;305:75;8:9:-1;5:2;;;30:1;27;20:12;5:2;305:75:1;358:10;350:5;;:18;;;;;;;;;;;;;;;;;;28:1080;;;;;;",
+  "deployedSourceMap": "28:1080:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:1080:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;934:171;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;139:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;498:101;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;498:101:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;498:101:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;498:101:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;498:101:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;498:101:1;;;;;;;;;;;;;;;:::i;:::-;;86:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;607:243;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;56:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;56:23:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;856:72;;;:::i;:::-;;113:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;113:19:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;934:171;977:6;438:5;;;;;;;;;;;424:19;;:10;:19;;;416:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1010:3;999:7;;:14;995:103;;;1041:14;1029:9;;:26;;;;;;;;;;;;;;;;;;;;;;;;1077:9;;;;;;;;;;;1070:16;;;;995:103;481:1;934:171;:::o;139:19::-;;;;:::o;498:101::-;438:5;;;;;;;;;;;424:19;;:10;:19;;;416:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;582:9;570;:21;;;;;;;;;;;;:::i;:::-;;498:101;:::o;86:20::-;;;;;;;;;;;;;:::o;607:243::-;658:6;438:5;;;;;;;;;;;424:19;;:10;:19;;;416:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;732:30;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;732:30:1;;;722:41;;;;;;707:9;690:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;690:27:1;;;680:38;;;;;;:83;677:139;;;792:12;780:9;;:24;;;;;;;;;;;;;;;;;;;;;;;;677:139;833:9;;;;;;;;;;;826:16;;607:243;:::o;56:23::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;856:72::-;910:10;904:3;:16;894:7;:26;;;;856:72::o;113:19::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;28:1080::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.11;\r\n\r\ncontract AliveTest {\r\n\r\n    string public inputData;\r\n    address public owner;\r\n    string public state;\r\n    uint public endTime;\r\n\r\n    enum Status {\r\n        unknown, alive, missing\r\n    }\r\n    Status statusNow;\r\n    Status constant defaultstatusNow = Status.unknown;\r\n    constructor() public\r\n        {\r\n            owner = msg.sender;\r\n        }\r\n    modifier isOwner (){\r\n        require(msg.sender == owner, \"Invalid Authentication\");\r\n        _;\r\n    }\r\n\r\n    function getInput (string memory statusKey) public isOwner() {\r\n        inputData = statusKey;\r\n    }\r\n\r\n    function storageState () public isOwner() returns (Status) {\r\n        if(keccak256(abi.encodePacked(inputData)) == keccak256(abi.encodePacked(\"I am alive\")) ){\r\n            statusNow = Status.alive;\r\n        }\r\n        return statusNow;\r\n    }\r\n    function setTimer() public {\r\n        endTime = now + 60 seconds;\r\n    }\r\n    function isEnd () public isOwner() returns(Status){\r\n        if( endTime == now){\r\n            statusNow = Status.missing;\r\n            return statusNow;\r\n        }\r\n    }\r\n}",
+  "sourcePath": "C:/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol",
+    "exportedSymbols": {
+      "AliveTest": [
+        170
+      ]
+    },
+    "id": 171,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 170,
+        "linearizedBaseContracts": [
+          170
+        ],
+        "name": "AliveTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "inputData",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "56:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 62,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "86:20:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 61,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "86:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "state",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "113:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 63,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "113:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 66,
+            "name": "endTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "139:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 65,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "139:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "AliveTest.Status",
+            "id": 70,
+            "members": [
+              {
+                "id": 67,
+                "name": "unknown",
+                "nodeType": "EnumValue",
+                "src": "190:7:1"
+              },
+              {
+                "id": 68,
+                "name": "alive",
+                "nodeType": "EnumValue",
+                "src": "199:5:1"
+              },
+              {
+                "id": 69,
+                "name": "missing",
+                "nodeType": "EnumValue",
+                "src": "206:7:1"
+              }
+            ],
+            "name": "Status",
+            "nodeType": "EnumDefinition",
+            "src": "167:53:1"
+          },
+          {
+            "constant": false,
+            "id": 72,
+            "name": "statusNow",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "226:16:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Status_$70",
+              "typeString": "enum AliveTest.Status"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 71,
+              "name": "Status",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 70,
+              "src": "226:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$70",
+                "typeString": "enum AliveTest.Status"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 76,
+            "name": "defaultstatusNow",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "249:49:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Status_$70",
+              "typeString": "enum AliveTest.Status"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 73,
+              "name": "Status",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 70,
+              "src": "249:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$70",
+                "typeString": "enum AliveTest.Status"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "expression": {
+                "argumentTypes": null,
+                "id": 74,
+                "name": "Status",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 70,
+                "src": "284:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_enum$_Status_$70_$",
+                  "typeString": "type(enum AliveTest.Status)"
+                }
+              },
+              "id": 75,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "lValueRequested": false,
+              "memberName": "unknown",
+              "nodeType": "MemberAccess",
+              "referencedDeclaration": null,
+              "src": "284:14:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$70",
+                "typeString": "enum AliveTest.Status"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 84,
+              "nodeType": "Block",
+              "src": "335:45:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 79,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "350:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 80,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 185,
+                        "src": "358:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 81,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "358:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "350:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 83,
+                  "nodeType": "ExpressionStatement",
+                  "src": "350:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 85,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 77,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "316:2:1"
+            },
+            "returnParameters": {
+              "id": 78,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "335:0:1"
+            },
+            "scope": 170,
+            "src": "305:75:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 96,
+              "nodeType": "Block",
+              "src": "405:85:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 91,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 88,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 185,
+                            "src": "424:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 89,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "424:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 90,
+                          "name": "owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 62,
+                          "src": "438:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "424:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "496e76616c69642041757468656e7469636174696f6e",
+                        "id": 92,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "445:24:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        },
+                        "value": "Invalid Authentication"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        }
+                      ],
+                      "id": 87,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        188,
+                        189
+                      ],
+                      "referencedDeclaration": 189,
+                      "src": "416:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 93,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "416:54:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 94,
+                  "nodeType": "ExpressionStatement",
+                  "src": "416:54:1"
+                },
+                {
+                  "id": 95,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "481:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 97,
+            "name": "isOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 86,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "403:2:1"
+            },
+            "src": "386:104:1",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 108,
+              "nodeType": "Block",
+              "src": "559:40:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 106,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 104,
+                      "name": "inputData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "570:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 105,
+                      "name": "statusKey",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 99,
+                      "src": "582:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "570:21:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 107,
+                  "nodeType": "ExpressionStatement",
+                  "src": "570:21:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 109,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 102,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 101,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 97,
+                  "src": "549:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "549:9:1"
+              }
+            ],
+            "name": "getInput",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 99,
+                  "name": "statusKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 109,
+                  "src": "517:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 98,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "517:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "516:25:1"
+            },
+            "returnParameters": {
+              "id": 103,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "559:0:1"
+            },
+            "scope": 170,
+            "src": "498:101:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 138,
+              "nodeType": "Block",
+              "src": "666:184:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    },
+                    "id": 128,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 119,
+                              "name": "inputData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 60,
+                              "src": "707:9:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 117,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 172,
+                              "src": "690:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 118,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "690:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 120,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "690:27:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 116,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 179,
+                        "src": "680:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 121,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "680:38:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "4920616d20616c697665",
+                              "id": 125,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "749:12:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              },
+                              "value": "I am alive"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 123,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 172,
+                              "src": "732:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 124,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "732:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 126,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "732:30:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 122,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 179,
+                        "src": "722:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 127,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "722:41:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "680:83:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 135,
+                  "nodeType": "IfStatement",
+                  "src": "677:139:1",
+                  "trueBody": {
+                    "id": 134,
+                    "nodeType": "Block",
+                    "src": "765:51:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 132,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 129,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 72,
+                            "src": "780:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 130,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 70,
+                              "src": "792:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$70_$",
+                                "typeString": "type(enum AliveTest.Status)"
+                              }
+                            },
+                            "id": 131,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "alive",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "792:12:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "src": "780:24:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$70",
+                            "typeString": "enum AliveTest.Status"
+                          }
+                        },
+                        "id": 133,
+                        "nodeType": "ExpressionStatement",
+                        "src": "780:24:1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 136,
+                    "name": "statusNow",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 72,
+                    "src": "833:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$70",
+                      "typeString": "enum AliveTest.Status"
+                    }
+                  },
+                  "functionReturnParameters": 115,
+                  "id": 137,
+                  "nodeType": "Return",
+                  "src": "826:16:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 139,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 112,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 111,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 97,
+                  "src": "639:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "639:9:1"
+              }
+            ],
+            "name": "storageState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 110,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "629:2:1"
+            },
+            "returnParameters": {
+              "id": 115,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 114,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 139,
+                  "src": "658:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Status_$70",
+                    "typeString": "enum AliveTest.Status"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 113,
+                    "name": "Status",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 70,
+                    "src": "658:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$70",
+                      "typeString": "enum AliveTest.Status"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "657:8:1"
+            },
+            "scope": 170,
+            "src": "607:243:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 148,
+              "nodeType": "Block",
+              "src": "883:45:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 146,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 142,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 66,
+                      "src": "894:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 145,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 143,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 187,
+                        "src": "904:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "3630",
+                        "id": 144,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "910:10:1",
+                        "subdenomination": "seconds",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_60_by_1",
+                          "typeString": "int_const 60"
+                        },
+                        "value": "60"
+                      },
+                      "src": "904:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "894:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 147,
+                  "nodeType": "ExpressionStatement",
+                  "src": "894:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 149,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTimer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "873:2:1"
+            },
+            "returnParameters": {
+              "id": 141,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "883:0:1"
+            },
+            "scope": 170,
+            "src": "856:72:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 168,
+              "nodeType": "Block",
+              "src": "984:121:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 158,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 156,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 66,
+                      "src": "999:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 157,
+                      "name": "now",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 187,
+                      "src": "1010:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "999:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 167,
+                  "nodeType": "IfStatement",
+                  "src": "995:103:1",
+                  "trueBody": {
+                    "id": 166,
+                    "nodeType": "Block",
+                    "src": "1014:84:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 162,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 159,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 72,
+                            "src": "1029:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 160,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 70,
+                              "src": "1041:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$70_$",
+                                "typeString": "type(enum AliveTest.Status)"
+                              }
+                            },
+                            "id": 161,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "missing",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1041:14:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "src": "1029:26:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$70",
+                            "typeString": "enum AliveTest.Status"
+                          }
+                        },
+                        "id": 163,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1029:26:1"
+                      },
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 164,
+                          "name": "statusNow",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 72,
+                          "src": "1077:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$70",
+                            "typeString": "enum AliveTest.Status"
+                          }
+                        },
+                        "functionReturnParameters": 155,
+                        "id": 165,
+                        "nodeType": "Return",
+                        "src": "1070:16:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 169,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 152,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 151,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 97,
+                  "src": "959:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "959:9:1"
+              }
+            ],
+            "name": "isEnd",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 150,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "949:2:1"
+            },
+            "returnParameters": {
+              "id": 155,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 154,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 169,
+                  "src": "977:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Status_$70",
+                    "typeString": "enum AliveTest.Status"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 153,
+                    "name": "Status",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 70,
+                    "src": "977:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$70",
+                      "typeString": "enum AliveTest.Status"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "976:8:1"
+            },
+            "scope": 170,
+            "src": "934:171:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 171,
+        "src": "28:1080:1"
+      }
+    ],
+    "src": "0:1108:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Monica/Desktop/SIT764/alivequiz/contracts/quiz.sol",
+    "exportedSymbols": {
+      "AliveTest": [
+        170
+      ]
+    },
+    "id": 171,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 170,
+        "linearizedBaseContracts": [
+          170
+        ],
+        "name": "AliveTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "inputData",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "56:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 62,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "86:20:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 61,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "86:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "state",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "113:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 63,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "113:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 66,
+            "name": "endTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "139:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 65,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "139:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "AliveTest.Status",
+            "id": 70,
+            "members": [
+              {
+                "id": 67,
+                "name": "unknown",
+                "nodeType": "EnumValue",
+                "src": "190:7:1"
+              },
+              {
+                "id": 68,
+                "name": "alive",
+                "nodeType": "EnumValue",
+                "src": "199:5:1"
+              },
+              {
+                "id": 69,
+                "name": "missing",
+                "nodeType": "EnumValue",
+                "src": "206:7:1"
+              }
+            ],
+            "name": "Status",
+            "nodeType": "EnumDefinition",
+            "src": "167:53:1"
+          },
+          {
+            "constant": false,
+            "id": 72,
+            "name": "statusNow",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "226:16:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Status_$70",
+              "typeString": "enum AliveTest.Status"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 71,
+              "name": "Status",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 70,
+              "src": "226:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$70",
+                "typeString": "enum AliveTest.Status"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 76,
+            "name": "defaultstatusNow",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "249:49:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Status_$70",
+              "typeString": "enum AliveTest.Status"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 73,
+              "name": "Status",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 70,
+              "src": "249:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$70",
+                "typeString": "enum AliveTest.Status"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "expression": {
+                "argumentTypes": null,
+                "id": 74,
+                "name": "Status",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 70,
+                "src": "284:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_enum$_Status_$70_$",
+                  "typeString": "type(enum AliveTest.Status)"
+                }
+              },
+              "id": 75,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "lValueRequested": false,
+              "memberName": "unknown",
+              "nodeType": "MemberAccess",
+              "referencedDeclaration": null,
+              "src": "284:14:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Status_$70",
+                "typeString": "enum AliveTest.Status"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 84,
+              "nodeType": "Block",
+              "src": "335:45:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 79,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "350:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 80,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 185,
+                        "src": "358:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 81,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "358:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "350:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 83,
+                  "nodeType": "ExpressionStatement",
+                  "src": "350:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 85,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 77,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "316:2:1"
+            },
+            "returnParameters": {
+              "id": 78,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "335:0:1"
+            },
+            "scope": 170,
+            "src": "305:75:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 96,
+              "nodeType": "Block",
+              "src": "405:85:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 91,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 88,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 185,
+                            "src": "424:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 89,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "424:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 90,
+                          "name": "owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 62,
+                          "src": "438:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "424:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "496e76616c69642041757468656e7469636174696f6e",
+                        "id": 92,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "445:24:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        },
+                        "value": "Invalid Authentication"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_e1988026dab62cf086f6dc9b58e53a9f760a5f9862a1833e1f3121aab89a3805",
+                          "typeString": "literal_string \"Invalid Authentication\""
+                        }
+                      ],
+                      "id": 87,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        188,
+                        189
+                      ],
+                      "referencedDeclaration": 189,
+                      "src": "416:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 93,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "416:54:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 94,
+                  "nodeType": "ExpressionStatement",
+                  "src": "416:54:1"
+                },
+                {
+                  "id": 95,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "481:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 97,
+            "name": "isOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 86,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "403:2:1"
+            },
+            "src": "386:104:1",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 108,
+              "nodeType": "Block",
+              "src": "559:40:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 106,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 104,
+                      "name": "inputData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "570:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 105,
+                      "name": "statusKey",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 99,
+                      "src": "582:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "570:21:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 107,
+                  "nodeType": "ExpressionStatement",
+                  "src": "570:21:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 109,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 102,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 101,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 97,
+                  "src": "549:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "549:9:1"
+              }
+            ],
+            "name": "getInput",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 99,
+                  "name": "statusKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 109,
+                  "src": "517:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 98,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "517:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "516:25:1"
+            },
+            "returnParameters": {
+              "id": 103,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "559:0:1"
+            },
+            "scope": 170,
+            "src": "498:101:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 138,
+              "nodeType": "Block",
+              "src": "666:184:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    },
+                    "id": 128,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 119,
+                              "name": "inputData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 60,
+                              "src": "707:9:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 117,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 172,
+                              "src": "690:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 118,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "690:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 120,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "690:27:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 116,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 179,
+                        "src": "680:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 121,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "680:38:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "4920616d20616c697665",
+                              "id": 125,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "749:12:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              },
+                              "value": "I am alive"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_71d4b48f852c47c322119ca187bd7b10ee0630d73e3434706cc46f076dd70f2f",
+                                "typeString": "literal_string \"I am alive\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 123,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 172,
+                              "src": "732:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 124,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "encodePacked",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "732:16:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 126,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "732:30:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "id": 122,
+                        "name": "keccak256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 179,
+                        "src": "722:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                          "typeString": "function (bytes memory) pure returns (bytes32)"
+                        }
+                      },
+                      "id": 127,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "722:41:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "680:83:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 135,
+                  "nodeType": "IfStatement",
+                  "src": "677:139:1",
+                  "trueBody": {
+                    "id": 134,
+                    "nodeType": "Block",
+                    "src": "765:51:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 132,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 129,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 72,
+                            "src": "780:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 130,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 70,
+                              "src": "792:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$70_$",
+                                "typeString": "type(enum AliveTest.Status)"
+                              }
+                            },
+                            "id": 131,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "alive",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "792:12:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "src": "780:24:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$70",
+                            "typeString": "enum AliveTest.Status"
+                          }
+                        },
+                        "id": 133,
+                        "nodeType": "ExpressionStatement",
+                        "src": "780:24:1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 136,
+                    "name": "statusNow",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 72,
+                    "src": "833:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$70",
+                      "typeString": "enum AliveTest.Status"
+                    }
+                  },
+                  "functionReturnParameters": 115,
+                  "id": 137,
+                  "nodeType": "Return",
+                  "src": "826:16:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 139,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 112,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 111,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 97,
+                  "src": "639:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "639:9:1"
+              }
+            ],
+            "name": "storageState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 110,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "629:2:1"
+            },
+            "returnParameters": {
+              "id": 115,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 114,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 139,
+                  "src": "658:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Status_$70",
+                    "typeString": "enum AliveTest.Status"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 113,
+                    "name": "Status",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 70,
+                    "src": "658:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$70",
+                      "typeString": "enum AliveTest.Status"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "657:8:1"
+            },
+            "scope": 170,
+            "src": "607:243:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 148,
+              "nodeType": "Block",
+              "src": "883:45:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 146,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 142,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 66,
+                      "src": "894:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 145,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 143,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 187,
+                        "src": "904:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "3630",
+                        "id": 144,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "910:10:1",
+                        "subdenomination": "seconds",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_60_by_1",
+                          "typeString": "int_const 60"
+                        },
+                        "value": "60"
+                      },
+                      "src": "904:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "894:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 147,
+                  "nodeType": "ExpressionStatement",
+                  "src": "894:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 149,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTimer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "873:2:1"
+            },
+            "returnParameters": {
+              "id": 141,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "883:0:1"
+            },
+            "scope": 170,
+            "src": "856:72:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 168,
+              "nodeType": "Block",
+              "src": "984:121:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 158,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 156,
+                      "name": "endTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 66,
+                      "src": "999:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 157,
+                      "name": "now",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 187,
+                      "src": "1010:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "999:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 167,
+                  "nodeType": "IfStatement",
+                  "src": "995:103:1",
+                  "trueBody": {
+                    "id": 166,
+                    "nodeType": "Block",
+                    "src": "1014:84:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 162,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 159,
+                            "name": "statusNow",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 72,
+                            "src": "1029:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 160,
+                              "name": "Status",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 70,
+                              "src": "1041:6:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Status_$70_$",
+                                "typeString": "type(enum AliveTest.Status)"
+                              }
+                            },
+                            "id": 161,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "missing",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1041:14:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Status_$70",
+                              "typeString": "enum AliveTest.Status"
+                            }
+                          },
+                          "src": "1029:26:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$70",
+                            "typeString": "enum AliveTest.Status"
+                          }
+                        },
+                        "id": 163,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1029:26:1"
+                      },
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 164,
+                          "name": "statusNow",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 72,
+                          "src": "1077:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Status_$70",
+                            "typeString": "enum AliveTest.Status"
+                          }
+                        },
+                        "functionReturnParameters": 155,
+                        "id": 165,
+                        "nodeType": "Return",
+                        "src": "1070:16:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 169,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 152,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 151,
+                  "name": "isOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 97,
+                  "src": "959:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "959:9:1"
+              }
+            ],
+            "name": "isEnd",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 150,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "949:2:1"
+            },
+            "returnParameters": {
+              "id": 155,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 154,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 169,
+                  "src": "977:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Status_$70",
+                    "typeString": "enum AliveTest.Status"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 153,
+                    "name": "Status",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 70,
+                    "src": "977:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$70",
+                      "typeString": "enum AliveTest.Status"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "976:8:1"
+            },
+            "scope": 170,
+            "src": "934:171:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 171,
+        "src": "28:1080:1"
+      }
+    ],
+    "src": "0:1108:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.20",
+  "updatedAt": "2019-12-28T00:19:10.546Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
